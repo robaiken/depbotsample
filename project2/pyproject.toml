@@ -2,6 +2,10 @@
 requires = ["uv_build"]
 build-backend = "uv_build"
 
+[tool.uv.build-backend]
+module-name = "project2"
+module-root = ""
+
 [project]
 name = "project2"
 version = "0.1.0"
