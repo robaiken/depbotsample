@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "project2"
+version = "0.1.0"
+description = "A sample project using uv with path dependency"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "project1",
+]
+
+[tool.uv.sources]
+project1 = { path = "../project1", editable = true }
