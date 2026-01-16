@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "project1"
 dynamic = ["version"]
 description = "A sample project using hatch-vcs for versioning"
-readme = "README.md"
+readme = { file = "README.md", content-type = "text/markdown" }
 requires-python = ">=3.8"
 dependencies = [
     "requests>=2.31.0",
